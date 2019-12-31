@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ArticleView"
+    android:fitsSystemWindows="true"
+    android:background="@color/background">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/article_view_appbar"
+        android:background="@color/colorPrimary">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/demoimg"
+                android:scaleType="centerCrop"
+                android:id="@+id/article_view_image"
+                app:layout_collapseMode="parallax" />
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/article_view_toolbar"
+                app:layout_collapseMode="pin"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Youth Fashion Womens Other Dress Material"
+                        android:fontFamily="@font/semibold"
+                        android:textSize="22sp"
+                        android:textColor="@color/textColor"
+                        android:layout_weight="0.5"
+                        android:id="@+id/article_view_title"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bookmark"
+                        android:layout_weight="0"
+                        app:backgroundTint="@color/background"
+                        android:clickable="true"
+                        android:tint="@color/textlightColor"
+                        android:id="@+id/article_view_bookmark"
+                        app:elevation="0dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ugjfffjfjfjfjf"
+                        android:fontFamily="@font/regular"
+                        android:id="@+id/article_view_author"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ugjfffjfjfjfjf"
+                        android:fontFamily="@font/regular"
+                        android:id="@+id/article_view_time"
+                        android:textColor="@color/textlightColor"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/regular"
+                        android:text="khskfhskhfskhgshgshg"
+                        android:textSize="18sp"
+                        android:id="@+id/article_view_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical">
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/heartoff"
+                            app:backgroundTint="@color/background"
+                            android:tint="@color/colorPrimary"
+                            app:fabCustomSize="34dp"
+                            android:id="@+id/article_view_like"
+                            app:elevation="0dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="250 Peoples liked this article"
+                            android:fontFamily="@font/bold"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/textColor"
+                            android:id="@+id/article_view_likesCount"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Catwalk</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="filter">Filter</string>
+    <string name="logo">Catwalk.lk</string>
+    <string name="general">General</string>
+    <string name="favourite_list">Favourite List</string>
+    <string name="article_bookmark">Article Bookmark</string>
+    <string name="others">Others</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="contact_us">Contact us</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="if_you_dont_have_account">If your don\'t have account</string>
+    <string name="create_account">Create Account with Google</string>
+    <string name="cancel">Cancel</string>
+    <string name="use_google">Use your Google Account for Sign in</string>
+    <string name="web_client_id">476549828299-knk0svs1mjtnjk4sh2a78m86gv1hs332.apps.googleusercontent.com</string>
+    <string name="recent_updates">Recent Updates</string>
+    <string name="latest_articales">Latest Articles</string>
+</resources>
